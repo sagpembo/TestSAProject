@@ -7,6 +7,15 @@ packages:
   gitUrl: https://github.com/sagpembo/TestSAProject
   gitUsername: sagpembo
   gitBranch: main
+services:
+- serviceName: project.testsa.integrations:test
+  packages:
+  - name: TestSAProject
+    version: "1.0"
+- serviceName: pub.flow:debugLog
+  packages:
+  - name: WmPublic
+    version: 11.0.0.0.741
 configurationVariables:
   jdbc.jdbcTestPool.waitingThread: "0"
   jdbc.jdbcTestPool.minConns: "0"
